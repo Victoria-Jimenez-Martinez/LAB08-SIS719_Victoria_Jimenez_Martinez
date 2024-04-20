@@ -1,4 +1,4 @@
-import "../layouts/Style/cards.css";
+import "../Style/cards.css";
 
 export const Avatar = () => {
   const baseUrl = 'https://api.minimalavatars.com/avatar/random'
