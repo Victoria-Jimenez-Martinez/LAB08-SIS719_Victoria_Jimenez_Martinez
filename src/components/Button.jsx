@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../layouts/Style/button.css"; 
+import "../Style/button.css"; 
 
 export const Button = () => {
   const [count, setCount] = useState(5);
