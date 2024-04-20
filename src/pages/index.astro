@@ -1,36 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { List } from '../components/wapperList.jsx';
+import {Avatar} from '../components/Cards.jsx';
 import Card from '../components/Card.astro';
-const buyList = [
-	'Controller',
-	'Bread',
-	'Water',
-	'Notebook',
-	'Math Book',
-	'Choco Bar',
-	'Milk'
-]
 ---
 
 <Layout title="Welcome to Astro.">
-  <div class="container">	
-	<Card title=" Pregunta numero 3 "/>
-    <List>
-		<slot>
-			{buyList.map((item) => (
-				<li>{item}</li>
-			))}
-		</slot>
-	</List>
+  <Card title="Pregunra 4 API"/>
+  <div class="container">
+        <Avatar/>
   </div>
 </Layout>
 <style>
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
     .container {
       display: flex;
 	  flex-direction: column;
@@ -40,19 +20,4 @@ const buyList = [
 	  margin: auto;
 	  padding: auto;
     }
-
-	li {
-		list-style: none;
-		padding: 10px;
-		margin: 10px;
-		background-color: #f3f3f3;
-		border-radius: 5px;
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-		transition: all 0.3s ease;	
-	}
-	li:hover {
-		transform: translateY(-5px);
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-		background-color: rgb(174, 177, 177);
-	}
   </style>
