@@ -1,4 +1,4 @@
-import "../layouts/Style/wapperList.css"; 
+import "../Style/wapperList.css"; 
 
 export const List = (props) => {
     const { children } = props
