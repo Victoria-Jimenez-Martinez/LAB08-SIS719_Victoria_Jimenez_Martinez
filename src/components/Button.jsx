@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import "../layouts/Style/button.css"; 
 
-export const Button = (props) => {
-  const {text} = props;
-  const [count, setCount] = useState(0);
+export const Button = () => {
+  const [count, setCount] = useState(5);
 
   const handleIncrement = () => {
-    setCount(count + 5);
+    setCount(count + 50);
   };
 
   return (
